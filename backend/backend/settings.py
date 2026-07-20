@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '81.26.183.245', 'plannerx.hopto.org']
+ALLOWED_HOSTS = ['81.26.183.245', '127.0.0.1', 'localhost', 'taski-planner.hopto.org']
 
 # Application definition
 
@@ -118,4 +118,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://taski-planner.hopto.org',
+    'http://taski-planner.hopto.org',
 ]
